@@ -3,27 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E36 DRIVE | Home</title>
+    <title>E36 Gallery</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">E36<span>DRIVE</span></div>
+            <div class="logo"><a href="index.html" style="text-decoration:none; color:inherit;">E36<span>DRIVE</span></a></div>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="hero">
-        <h1>The Ultimate Driving Machine</h1>
-        <div class="image-container">
-            <img src="images/SickE36.jpg" alt="BMW E36" id="main-car">
+    <main class="content-section">
+        <h2>The Collection</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="images/car1.jpg" alt="E36 Profile"></div>
+            <div class="gallery-item"><img src="images/car2.jpg" alt="E36 Rear"></div>
+            <div class="gallery-item"><img src="images/car3.jpg" alt="E36 Interior"></div>
+            <div class="gallery-item"><img src="images/car4.jpg" alt="E36 Track"></div>
+            <div class="gallery-item"><img src="images/car5.jpg" alt="E36 Engine"></div>
+            <div class="gallery-item"><img src="images/car6.jpg" alt="E36 Wheel Detail"></div>
         </div>
-        <button id="revButton">Start Engine</button>
     </main>
+
+    <div id="lightbox" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
 
     <script src="script.js"></script>
 </body>
